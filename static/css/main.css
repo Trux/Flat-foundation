@@ -896,6 +896,7 @@ dl {
   line-height: 1.6;
   margin-bottom: 1.25em;
   list-style-position: outside;
+  list-style: none;
   font-family: inherit; }
 
 /* Unordered Lists */
@@ -2462,8 +2463,24 @@ table {
 }
 
 #banner.body{
-  margin-left: 30%;
+  background-color: red;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+body{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
 
+#menu{
+  background-color: blue;
+}
+
+#siteName{
+  margin-top: 10%;
+}
 }
