@@ -1,15 +1,18 @@
 Flat-foundation
 =============
 
-This is a simple 'flat' theme for [pelican](http://docs.getpelican.com/en/3.2/) made using [foundation framework](http://foundation.zurb.com).
+This is a simple 'flat' theme fr pelican <http://mnmlist.com/theme>`_ made using foundation framework.
 
 
 Css
 -------
+
+Flat Icons of Social Media from [graphic design junction](http://graphicdesignjunction.com/2013/02/flat-icons-of-social-media/) 
+
 The theme use 2 files
 
-*The ``main.css`` include all the CSS needed to render the theme
-*``normalize.css`` makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.
+* The ``main.css`` include all the CSS needed to render the theme
+* ``normalize.css`` makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.
 
-Both are compressed using a [genetic Algorithms](http://www.youtube.com/watch?v=1eBygLzCi9I)
+minified version are compressed using a [genetic Algorithms](http://www.youtube.com/watch?v=1eBygLzCi9I)
 

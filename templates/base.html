@@ -1,51 +1,54 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+
+<html lang="{{ DEFAULT_LANG }}">
 <head>
-<!-- {% block head %} -->
-        <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width" />
+        {% block head %}
         <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+        <meta charset="utf-8" />
 
-<link rel="stylesheet" href="{{ SITEURL }}/theme/flat-foundation/css/normalize.css" />
-<link rel="stylesheet" href="{{ SITEURL }}/theme/flat-foundation/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/main.css" />
 
+        {% endblock head %}
 </head>
-<body>
-<div class="row">
 
-<div class="large-6 columns">
-            <h1 class="site-title"><a href="{{ SITEURL }}">{{ SITENAME }}</a>
-             <span class="site-subtitle">{{ SITESUBTITLE }}</span></h1>
-            <!-- <h6 class="site-subtitle">{{ SITESUBTITLE }}</h6> -->
-{% block content %}
-{% endblock %}
-</div>
+<body id="index" class="home">
+        <header id="banner" class="body">
+        <ul class='inline-list'>
+        				<li><a href="{{ SITEURL }}"><img class='circularLogo' src="theme/images/logo.png" alt="conkystador-logo"></a></li>
+        				<li><h1><a href="{{ SITEURL }}">{{ SITENAME }} <strong>{{ SITESUBTITLE }}</strong></a></h1></li>
+        </ul>		  
+			  
+        </header><!-- /#banner -->
 
-<div id="bottom-bar" class="large-3 large-centered show-for-small columns">
-<center></div>
-
-    <div class="row">
-<footer id="contentinfo" class="large-6 large-centered columns">
-<hr>
-<h6 class="footer subheader">
-Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-which takes great advantage of <a href="http://python.org">Python</a>.
-</h6>
-<p> </p>
-<p> </p>
-</footer><!-- /#contentinfo -->
-</div>
-
-<script>
-document.write('<script src=' +
-('__proto__' in {} ? '{{ SITEURL }}/theme/js/vendor/zepto' : '{{ SITEURL }}/theme/js/vendor/jquery') +
-'.js><\/script>')
-</script>
-
-<script src="{{ SITEURL }}/theme/js/foundation.min.js"></script>
-
-<script>
-$(document).foundation();
-</script>
+        <nav id="menu">
+        	<p>NAVIGATION</p><ul>
+        {% for title, link in MENUITEMS %}
+            <li><a href="{{ link }}">{{ title }}</a></li>
+        {% endfor %}
+        {% if DISPLAY_PAGES_ON_MENU %}
+          {% for p in PAGES %}
+            <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+          {% endfor %}
+        {% else %}
+          {% if DISPLAY_CATEGORIES_ON_MENU %}
+            {% for cat, null in categories %}
+              <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+            {% endfor %}
+          {% endif %}
+        {% endif %}
+        </ul></nav><!-- /#menu -->
+        {% block content %}
+        {% endblock %}
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                using flat-foundation <a href="https://github.com/Trux/Flat-foundation">theme</a>.
+                </address><!-- /#about -->
+				<ul class="inline-list">
+                <li><a href="https://github.com/Trux/"><img id='githubLogo' src="theme/images/icons/github/github-128.png" alt="github-logo"></a></li>
+			  <li><a href="https://twitter.com/truxs/"><img id='twitterLogo' src="theme/images/icons/twitter/twitter-128.png" alt="twitter-logo"></a></li>
+			</ul>
+        </footer><!-- /#contentinfo -->
 </body>
 </html>
