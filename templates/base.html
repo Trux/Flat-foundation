@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- {% block head %} -->
+        <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+        <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+
+<link rel="stylesheet" href="{{ SITEURL }}/theme/flat-foundation/css/normalize.css" />
+<link rel="stylesheet" href="{{ SITEURL }}/theme/flat-foundation/css/style.css" />
+
+</head>
+<body>
+<div class="row">
+
+<div class="large-6 columns">
+            <h1 class="site-title"><a href="{{ SITEURL }}">{{ SITENAME }}</a>
+             <span class="site-subtitle">{{ SITESUBTITLE }}</span></h1>
+            <!-- <h6 class="site-subtitle">{{ SITESUBTITLE }}</h6> -->
+{% block content %}
+{% endblock %}
+</div>
+
+<div id="bottom-bar" class="large-3 large-centered show-for-small columns">
+<center></div>
+
+    <div class="row">
+<footer id="contentinfo" class="large-6 large-centered columns">
+<hr>
+<h6 class="footer subheader">
+Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+which takes great advantage of <a href="http://python.org">Python</a>.
+</h6>
+<p> </p>
+<p> </p>
+</footer><!-- /#contentinfo -->
+</div>
+
+<script>
+document.write('<script src=' +
+('__proto__' in {} ? '{{ SITEURL }}/theme/js/vendor/zepto' : '{{ SITEURL }}/theme/js/vendor/jquery') +
+'.js><\/script>')
+</script>
+
+<script src="{{ SITEURL }}/theme/js/foundation.min.js"></script>
+
+<script>
+$(document).foundation();
+</script>
+</body>
+</html>
