@@ -1,13 +1,15 @@
 Flat-foundation
 =============
 
-This is a simple 'flat' theme fr pelican <http://mnmlist.com/theme>`_ made using foundation framework.
+This is a basic 'flat' theme for pelican <http://mnmlist.com/theme>`_ made using foundation framework.
 
 
 Css
 -------
 
 Flat Icons of Social Media from [graphic design junction](http://graphicdesignjunction.com/2013/02/flat-icons-of-social-media/) 
+
+Title font from [fontspace](http://www.fontspace.com/jonathan-hill/corbert)
 
 The theme use 2 files
 

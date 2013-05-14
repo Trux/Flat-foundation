@@ -13,16 +13,17 @@
 </head>
 
 <body id="index" class="home">
-        <header id="banner" class="body">        
-            <h1 id='siteName'><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>			  
+        <header id="banner" id="body">        
+            <h1 id='siteName'><a href="{{ SITEURL }}/index.html">{{ SITENAME }}</a></h1>			  
         </header><!-- /#banner -->
 
-        <nav id="menu">
-        	 <ul class='inline-list' id='navbar'>
-        	 <li>category</li>
-        	 <li>tags</li>
-        	 <li>rss</li>
-        </ul>	
+        <nav id='navbar'>
+        	<ul class='inline-list' class='nav'>
+        	   <li ><a href="{{ SITEURL }}/index.html">category</a></li>
+        	   <li ><a href="{{ SITEURL }}/index.html">tags</a></li>
+        	   <li ><a href="{{ SITEURL }}/index.html">rss</a></li>
+            </ul>	
+        </nav>
         <ul class='block-list'>
         {% for title, link in MENUITEMS %}
             <li><a href="{{ link }}">{{ title }}</a></li>
@@ -44,7 +45,6 @@
         {% endblock %}
 
         <div id='Test'>
-        <label>Input Label</label>
         </div>
 
         <footer id="contentinfo" class="body">
