@@ -1088,35 +1088,29 @@ button, .button {
   padding-bottom: 0.8125em;
   padding-left: 1.5em;
   font-size: 1em;
-  background-color: #2ba6cb;
-  border-color: #2284a1;
+  background-color: rgb(46, 204, 113);
   color: white; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #2284a1; }
+    background-color: rgb(85, 217, 141); }
   button:hover, button:focus, .button:hover, .button:focus {
     color: white; }
   button.secondary, .button.secondary {
-    background-color: #e9e9e9;
-    border-color: #d0d0d0;
-    color: #333333; }
+    background-color: #3498db;    
+    color: white; }
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
-      background-color: #d0d0d0; }
-    button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
-      color: #333333; }
+      background-color: #2980b9; }
   button.success, .button.success {
-    background-color: #5da423;
-    border-color: #457a1a;
+    background-color: #1abc9c;
     color: white; }
     button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
-      background-color: #457a1a; }
+      background-color: #16a085; }
     button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
       color: white; }
   button.alert, .button.alert {
-    background-color: #c60f13;
-    border-color: #970b0e;
+    background-color:#c0392b;
     color: white; }
     button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
-      background-color: #970b0e; }
+      background-color: #e74c3c; }
     button.alert:hover, button.alert:focus, .button.alert:hover, .button.alert:focus {
       color: white; }
   button.large, .button.large {
@@ -1148,19 +1142,16 @@ button, .button {
     text-align: right;
     padding-right: 0.75em; }
   button.disabled, button[disabled], .button.disabled, .button[disabled] {
-    background-color: #2ba6cb;
-    border-color: #2284a1;
+    background-color: #95a5a6;
     color: white;
     cursor: default;
     opacity: 0.6;
     -webkit-box-shadow: none;
     box-shadow: none; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #2284a1; }
+      background-color: #7f8c8d; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
       color: white; }
-    button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #2ba6cb; }
     button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
       background-color: #e9e9e9;
       border-color: #d0d0d0;
@@ -1227,12 +1218,6 @@ button, .button {
     button:active, .button:active {
       -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset; }
-    button.radius, .button.radius {
-      -webkit-border-radius: 3px;
-      border-radius: 3px; }
-    button.round, .button.round {
-      -webkit-border-radius: 1000px;
-      border-radius: 1000px; } }
 @media only screen and (min-width: 48em) {
   button, .button {
     display: inline-block; } }
@@ -1305,46 +1290,6 @@ label {
   padding-bottom: 0;
   text-align: center;
   line-height: 2.125em; }
-
-.prefix.button.radius {
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  -moz-border-radius-bottomleft: 3px;
-  -moz-border-radius-topleft: 3px;
-  -webkit-border-bottom-left-radius: 3px;
-  -webkit-border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  border-top-left-radius: 3px; }
-
-.postfix.button.radius {
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  -moz-border-radius-topright: 3px;
-  -moz-border-radius-bottomright: 3px;
-  -webkit-border-top-right-radius: 3px;
-  -webkit-border-bottom-right-radius: 3px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px; }
-
-.prefix.button.round {
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  -moz-border-radius-bottomleft: 1000px;
-  -moz-border-radius-topleft: 1000px;
-  -webkit-border-bottom-left-radius: 1000px;
-  -webkit-border-top-left-radius: 1000px;
-  border-bottom-left-radius: 1000px;
-  border-top-left-radius: 1000px; }
-
-.postfix.button.round {
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  -moz-border-radius-topright: 1000px;
-  -moz-border-radius-bottomright: 1000px;
-  -webkit-border-top-right-radius: 1000px;
-  -webkit-border-bottom-right-radius: 1000px;
-  border-top-right-radius: 1000px;
-  border-bottom-right-radius: 1000px; }
 
 /* Separate prefix and postfix styles when on span so buttons keep their own */
 span.prefix {

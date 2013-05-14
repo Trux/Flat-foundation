@@ -13,10 +13,8 @@
 </head>
 
 <body id="index" class="home">
-        <header id="banner" class="body">
-        
-            <h1 id='siteName'><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>        		  
-			  
+        <header id="banner" class="body">        
+            <h1 id='siteName'><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>			  
         </header><!-- /#banner -->
 
         <nav id="menu">
@@ -44,7 +42,11 @@
         </ul></nav><!-- /#menu -->
         {% block content %}
         {% endblock %}
-        
+
+        <div id='Test'>
+        <label>Input Label</label>
+        </div>
+
         <footer id="contentinfo" class="body">
                 <address id="about" class="vcard body">
                 Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
