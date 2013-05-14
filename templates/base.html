@@ -14,10 +14,8 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-        <ul class='inline-list'>
-        				<li><a href="{{ SITEURL }}"><img class='circularLogo' src="theme/images/logo.png" alt="conkystador-logo"></a></li>
-        				<li><h1 id='siteName'><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1></li>
-        </ul>		  
+        
+            <h1 id='siteName'><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>        		  
 			  
         </header><!-- /#banner -->
 
@@ -31,6 +29,7 @@
         {% for title, link in MENUITEMS %}
             <li><a href="{{ link }}">{{ title }}</a></li>
         {% endfor %}
+
         {% if DISPLAY_PAGES_ON_MENU %}
           {% for p in PAGES %}
             <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
@@ -45,6 +44,7 @@
         </ul></nav><!-- /#menu -->
         {% block content %}
         {% endblock %}
+        
         <footer id="contentinfo" class="body">
                 <address id="about" class="vcard body">
                 Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
