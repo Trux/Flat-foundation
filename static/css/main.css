@@ -2390,22 +2390,6 @@ table {
 
 /*circular logo*/
 
-.circularLogo {
-  width: 128px;
-  height: 128px;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  background-color: rgb(19, 165, 2);
-  }
-
-/*github logo*/
-#githubLogo, #twitterLogo{
-  background-color: rgb(19, 165, 2);
-  width: 128px;
-  height: 128px;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-}
 
 #banner.body{
   width: 80%;
@@ -2434,25 +2418,28 @@ body{
   width: 100%;
 }
 
-#nav{
-margin: 0px;
-width: 100%;
-text-align: center;
-border-top: 1px solid rgb(240, 240, 240);
-border-bottom: 1px solid rgb(240, 240, 240);
-padding: 10px 0px 16px;
+nav#navbar>.inline-list{
+  margin: 0px;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #95a5a6;
+  border-bottom: 1px solid #95a5a6;
+  /*padding: 10px 0px 16px;*/
 }
 
 @font-face {
-font-family: Colbert;
-src: url("/theme/static/fonts/Corbert-Regular.otf") format("opentype");
+font-family: corbert;
+src: url("../fonts/corbert.otf") format("opentype");
 }
 
 #siteName{
-  font-family: "Colbert","Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 1;
-  position: relative;
-  text-shadow: 5px 5px 0px #eee, 7px 7px 0px #707070;
+  font-family: "corbert","Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+#twitter{
+  color: #4099FF;
+}
+
+#github{
+  color: black;
 }
