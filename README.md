@@ -1,7 +1,7 @@
 Flat-foundation
 =============
 
-This is a basic 'flat' theme for pelican <http://mnmlist.com/theme>`_ made using foundation framework.
+This is a basic 'flat' theme for [pelican](http://docs.getpelican.com/en/3.2/) made using foundation framework.
 
 
 Css
